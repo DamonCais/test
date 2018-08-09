@@ -1,0 +1,27 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.scrollable {
+    overflow-x: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch !important;
+    &.only-x {
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+    }
+    &.only-y {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+}
